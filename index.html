@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>yash pandit - portfolio.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+
+  <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:1.0s;">about</a>
+  <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:1.0s;">work</a>
+  <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:1.0s;">contact</a>
+
+  <div id="middle" class="animated slideInDown" style="animation-delay:1.0s;">
+    <h1>yash pandit.</h1>
+    <h2>Software Engineer</h2>
+    <div id="menu">
+      <a onclick="showabout()">about</a>
+      <a onclick="showwork()">work</a>
+      <a onclick="showcontact()">contact</a>
+    </div>
+    <div>
+      <a class="social" href="https://github.com/yashpandit" hreflang="en">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="social" href="https://twitter.com/iyashpandit" hreflang="en">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="social" href="https://medium.com/@ypandit" hreflang="en">
+        <i class="fab fa-medium"></i>
+      </a>
+    </div>
+  </div>
+
+  <div id="work_container" class="container">
+    <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+    <h1>work.</h1>
+    <section>
+      <h2>experience</h2>
+      <p>
+        I worked at IBM for 1 year 8 months. I used to switch roles between
+        front-end and back-end. The tech stack used there was React and Java
+        Spring.
+      </p>
+      <p>
+        I was responsible for creating small modules in the existing system as
+        per the clients' requirements.
+      </p>
+      <a href="#" download="Resume" hreflang="en">
+        <button class="btn_one">
+          <i class="fas fa-file-download"></i>
+          &nbsp;&nbsp;resume
+        </button>
+      </a>
+    </section>
+  </div>
+  <div id="about_container" class="container">
+    <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+    <h1>about.</h1>
+    <section>
+      <h2>about me</h2>
+      <p>
+        I started my journey from a small town and my birth place Porbandar, Gujarat. Since then, I moved to
+        different places, meeting new people and learning how to adjust to a
+        busy urban lifestyle.
+      </p>
+      <p>
+        I have been to Ahmedabad, Bengaluru, Kanyakumari, Goa, Pondicherry,
+        Coorg and currently residing in Gurugram.
+      </p>
+      <p>
+        I love travelling to different places and meet new and exciting
+        people, learn about their culture differences and know about the
+        mindset they operate in.
+      </p>
+      <p>
+        There is a thing in my bucket list which I would like to complete as
+        soon as possible that is to attempt all the adventure sports atleast
+        once.
+      </p>
+    </section>
+    <section>
+      <h2>skills</h2>
+      <div id="used">
+        <p>front-end</p>
+        <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+        <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+        <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+        <div><i class="fas fa-circle"></i>&nbsp;React</div>
+        <p>back-end</p>
+        <div><i class="fas fa-circle"></i>&nbsp;Node</div>
+        <div><i class="fas fa-circle"></i>&nbsp;MongoDB</div>
+        <div><i class="fas fa-circle"></i>&nbsp;Express</div>
+        <p>testing</p>
+        <div><i class="fas fa-circle"></i>&nbsp;Jest</div>
+        <div><i class="fas fa-circle"></i>&nbsp;Enzyme</div>
+        <p>version control</p>
+        <div><i class="fas fa-circle"></i>&nbsp;Git</div>
+      </div>
+    </section>
+  </div>
+  <div id="contact_container" class="container">
+    <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+    <h1>contact.</h1>
+    <section>
+      <h2>contact me</h2>
+      <p>
+        <form action="mailto:hireyashpandit@gmail.com" method="post" enctype="text/plain">
+          <input type="text" placeholder="name" required>
+          <input type="email" placeholder="email" required><br>
+          <textarea placeholder="your message" required rows="5"></textarea><br>
+          <button class="btn_one">
+            <i class="fas fa-paper-plane"></i>
+            &nbsp;&nbsp;send
+          </button>
+        </form>
+      </p>
+    </section>
+  </div>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
