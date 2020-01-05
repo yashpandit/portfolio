@@ -224,6 +224,7 @@ body {
     font-weight:bold;
     margin:2vh 10px;
     transition:0.4s ease-in-out;
+    font-family: 'Poppins', sans-serif;
 }
 .btn_one:hover {
     cursor:pointer;
@@ -251,6 +252,7 @@ body {
     background:transparent;
     border:0px;
     border-bottom:3px solid rgba(255,255,255,0.5);
+    font-family: 'Poppins', sans-serif;
     padding:8px 10px;
     font-size:18px;
     transition:0.4s ease-in-out;
@@ -263,6 +265,7 @@ body {
     padding:8px 10px;
     border:0px;
     border-bottom:3px solid rgba(255,255,255,0.5);
+    font-family: 'Poppins', sans-serif;
     padding:8px 10px;
     font-size:18px;
     background:transparent;
