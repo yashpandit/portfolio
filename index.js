@@ -1,4 +1,4 @@
-function showabout() {
+function showAbout() {
   $("#about_container").css("display", "inherit");
   $("#about_container").addClass("animated slideInLeft");
   setTimeout(function () {
@@ -6,7 +6,7 @@ function showabout() {
   }, 800);
 }
 
-function closeabout() {
+function closeAbout() {
   $("#about_container").addClass("animated slideOutLeft");
   setTimeout(function () {
     $("#about_container").removeClass("animated slideOutLeft");
@@ -14,7 +14,7 @@ function closeabout() {
   }, 800);
 }
 
-function showwork() {
+function showWork() {
   $("#work_container").css("display", "inherit");
   $("#work_container").addClass("animated slideInRight");
   setTimeout(function () {
@@ -22,7 +22,7 @@ function showwork() {
   }, 800);
 }
 
-function closework() {
+function closeWork() {
   $("#work_container").addClass("animated slideOutRight");
   setTimeout(function () {
     $("#work_container").removeClass("animated slideOutRight");

@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon" href="./assets/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Yash Pandit's Portfolio" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>yash pandit - portfolio.</title>
+  <link rel="apple-touch-icon" href="./assets/logo192.png" />
+  <link rel="manifest" href="./assets/manifest.json" />
+  <title>yash pandit - portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -24,29 +24,30 @@
     <div id="spinner"></div>
   </div>
 
-  <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:1.0s;">about</a>
-  <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:1.0s;">work</a>
+  <a id="about" onclick="showAbout()" class="animated fadeIn" style="animation-delay:1.0s;">about</a>
+  <a id="work" onclick="showWork()" class="animated fadeIn" style="animation-delay:1.0s;">work</a>
 
   <div id="middle" class="animated slideInDown" style="animation-delay:1.0s;">
     <h1>yash pandit</h1>
     <h2>Software Engineer</h2>
     <div id="menu">
-      <a onclick="showabout()">about</a>
-      <a onclick="showwork()">work</a>
-      <a onclick="showcontact()">contact</a>
+      <a onclick="showAbout()">about</a>
+      <a onclick="showWork()">work</a>
     </div>
     <div>
-      <a class="social" target="_blank" href="https://github.com/yashpandit" hreflang="en"><i
+      <a class="social" rel="noopener noreferrer" target="_blank" href="https://github.com/yashpandit" hreflang="en"><i
           class="fab fa-github"></i></a>
-      <a class="social" target="_blank" href="https://twitter.com/iyashpandit" hreflang="en"><i
-          class="fab fa-twitter"></i></a>
-      <a class="social" target="_blank" href="https://medium.com/@ypandit" hreflang="en"><i
+      <a class="social" rel="noopener noreferrer" target="_blank" href="https://twitter.com/iyashpandit"
+        hreflang="en"><i class="fab fa-twitter"></i></a>
+      <a class="social" rel="noopener noreferrer" target="_blank" href="https://medium.com/@ypandit" hreflang="en"><i
           class="fab fa-medium"></i></a>
+      <a class="social" rel="noopener noreferrer" target="_blank" href="mailto:hireyashpandit@gmail.com"
+        hreflang="en"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
 
   <div id="work_container" class="container">
-    <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+    <div onclick="closeWork()"><i class="fas fa-angle-right"></i></div>
     <h1>work.</h1>
     <section>
       <h2>experience</h2>
@@ -68,7 +69,7 @@
     </section>
   </div>
   <div id="about_container" class="container">
-    <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+    <div onclick="closeAbout()"><i class="fas fa-angle-left"></i></div>
     <h1>about.</h1>
     <section>
       <h2>about me</h2>
