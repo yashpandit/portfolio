@@ -226,9 +226,12 @@ body {
   transform: rotate(0);
 }
 .card__description {
-  text-transform: uppercase;
-  font-size: 5em;
   padding: 1em 1em;
+}
+
+.card__description a {
+  color: burlywood;
+  text-decoration: none;
 }
 
 #about:hover {
@@ -270,8 +273,8 @@ body {
   width: 90vw;
   height: 90vh;
   padding: 5vh 5vw;
-  background: var(--theme-background);
   color: #fff;
+  background: var(--theme-background);
   z-index: 9;
   position: fixed;
   max-height: 100vh;
