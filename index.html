@@ -50,6 +50,12 @@
     <div onclick="closeWork()"><i class="fas fa-angle-right"></i></div>
     <h1>work.</h1>
     <section>
+      <a href="#" download="Resume" hreflang="en">
+        <button class="btn_one">
+          <i class="fas fa-file-download"></i>
+          &nbsp;&nbsp;resume
+        </button>
+      </a>
       <h2>experience</h2>
       <p>
         I worked at IBM for 1 year 8 months. I used to switch roles between
@@ -60,58 +66,64 @@
         I was responsible for creating small modules in the existing system as
         per the clients' requirements.
       </p>
-      <a href="#" download="Resume" hreflang="en">
-        <button class="btn_one">
-          <i class="fas fa-file-download"></i>
-          &nbsp;&nbsp;resume
-        </button>
-      </a>
     </section>
   </div>
   <div id="about_container" class="container">
-    <div onclick="closeAbout()"><i class="fas fa-angle-left"></i></div>
-    <h1>about.</h1>
-    <section>
+    <div class="back" onclick="closeAbout()"><i class="fas fa-angle-left"></i></div>
+    <div class="aboutSection">
+      <h1>about.</h1>
       <h2>about me</h2>
-      <p>
-        I started my journey from a small town and my birth place Porbandar, Gujarat. Since then, I moved to
-        different places, meeting new people and learning how to adjust to a
-        busy urban lifestyle.
-      </p>
-      <p>
-        I have been to Ahmedabad, Bengaluru, Kanyakumari, Goa, Pondicherry,
-        Coorg and currently residing in Gurugram.
-      </p>
-      <p>
-        I love travelling to different places and meet new and exciting
-        people, learn about their culture differences and know about the
-        mindset they operate in.
-      </p>
-      <p>
-        There is a thing in my bucket list which I would like to complete as
-        soon as possible that is to attempt all the adventure sports atleast
-        once.
-      </p>
-    </section>
-    <section>
-      <h2>skills</h2>
-      <div id="used">
-        <p>front-end</p>
-        <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
-        <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-        <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
-        <div><i class="fas fa-circle"></i>&nbsp;React</div>
-        <p>back-end</p>
-        <div><i class="fas fa-circle"></i>&nbsp;Node</div>
-        <div><i class="fas fa-circle"></i>&nbsp;MongoDB</div>
-        <div><i class="fas fa-circle"></i>&nbsp;Express</div>
-        <p>testing</p>
-        <div><i class="fas fa-circle"></i>&nbsp;Jest</div>
-        <div><i class="fas fa-circle"></i>&nbsp;Enzyme</div>
-        <p>version control</p>
-        <div><i class="fas fa-circle"></i>&nbsp;Git</div>
-      </div>
-    </section>
+      <section class="aboutMe">
+        <div class="card"></div>
+        <div>
+          <p>
+            I started my journey from a small town
+            and my birth place Porbandar, Gujarat.
+          </p>
+          <p>
+            Since then, I moved to different places,
+            meeting new people and learning how
+            to adjust to a busy urban lifestyle.
+          </p>
+          <p>
+            I have been to Ahmedabad, Bengaluru,
+            Kanyakumari, Goa, Pondicherry, Coorg
+            and currently residing in Gurugram.
+          </p>
+          <p>
+            I love travelling to different places
+            and meet new and exciting people,
+            learn about their culture differences
+            and know about the mindset they operate in.
+          </p>
+          <p>
+            There is a thing in my bucket list which
+            I would like to complete as soon as
+            possible that is to attempt all the
+            adventure sports atleast once.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>skills</h2>
+        <div id="used">
+          <p>front-end</p>
+          <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+          <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+          <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+          <div><i class="fas fa-circle"></i>&nbsp;React</div>
+          <p>back-end</p>
+          <div><i class="fas fa-circle"></i>&nbsp;Node</div>
+          <div><i class="fas fa-circle"></i>&nbsp;MongoDB</div>
+          <div><i class="fas fa-circle"></i>&nbsp;Express</div>
+          <p>testing</p>
+          <div><i class="fas fa-circle"></i>&nbsp;Jest</div>
+          <div><i class="fas fa-circle"></i>&nbsp;Enzyme</div>
+          <p>version control</p>
+          <div><i class="fas fa-circle"></i>&nbsp;Git</div>
+        </div>
+      </section>
+    </div>
   </div>
   <script src="index.js" type="text/javascript"></script>
 </body>

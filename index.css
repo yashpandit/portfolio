@@ -123,6 +123,18 @@ body {
   border-radius: 0 0 100px 100px;
 }
 
+.aboutMe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  height: 19em;
+  width: 21em;
+  background: url("./assets/my.jpg") 0 center;
+  border-radius: 5%;
+}
+
 #work {
   width: 10vw;
   height: 10vw;
@@ -161,6 +173,10 @@ body {
   text-align: center;
 }
 
+.back:hover {
+  cursor: pointer;
+}
+
 .social {
   color: #fff;
   font-size: 22px;
@@ -192,38 +208,30 @@ body {
   transition: 0.4s ease-in-out;
 }
 
-.container div:hover {
-  cursor: pointer;
-}
-
 .container section {
   margin: 8vh 0;
 }
 
 #used div {
-  font-size: 14px !important;
+  font-size: 16px !important;
   display: inline-block;
-  padding: 8px 10px;
+  padding: 12px 15px;
   border: 2px solid #fff;
   margin: 0 10px;
   border-radius: 50px;
 }
 
-#used:hover {
-  cursor: text;
-}
-
-#used div:hover {
-  cursor: text;
-}
-
 .container h1 {
-  font-size: 60px;
+  font-size: 50px;
   text-decoration: underline;
 }
 
+.container h2 {
+  font-size: 30px;
+}
+
 .container p {
-  font-size: 21px;
+  font-size: 20px;
 }
 
 .btn_one {
@@ -234,7 +242,6 @@ body {
   padding: 8px 40px;
   border-radius: 80px;
   font-weight: bold;
-  margin: 2vh 10px;
   transition: 0.4s ease-in-out;
   font-family: "Poppins", sans-serif;
 }
