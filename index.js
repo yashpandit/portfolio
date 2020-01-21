@@ -30,14 +30,29 @@ function closeWork() {
   }, 800);
 }
 
+function showSkills() {
+  $("#skills_container").css("display", "inherit");
+  $("#skills_container").addClass("animated slideInUp");
+  setTimeout(function () {
+    $("#skills_container").removeClass("animated slideInUp");
+  }, 800);
+}
+
+function closeSkills() {
+  $("#skills_container").addClass("animated slideOutDown");
+  setTimeout(function () {
+    $("#skills_container").removeClass("animated slideOutDown");
+    $("#skills_container").css("display", "none");
+  }, 800);
+}
+
 setTimeout(function () {
   $("#loading").addClass("animated fadeOut");
   setTimeout(function () {
     $("#loading").removeClass("animated fadeOut");
     $("#loading").css("display", "none");
-    $("#box").css("display", "none");
     $("#about").removeClass("animated fadeIn");
-    $("#contact").removeClass("animated fadeIn");
     $("#work").removeClass("animated fadeIn");
+    $("#skills").removeClass("animated fadeIn");
   }, 300);
 }, 500);
